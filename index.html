@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MGAID - Moral Guide Awareness Initiative, Dutsinma</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<verification.html/>
   <style>
-    
- 
     /* Global Styles */
     body {
       font-family: 'Roboto', sans-serif;
@@ -122,6 +119,23 @@
       color: white;
     }
     footer a { color: #ffcc00; }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 60px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
   </style>
 </head>
 <body>
@@ -170,12 +184,22 @@
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
+    <form action="https://formsubmit.co/umarmgaid@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Send Message</button>
     </form>
+
+    <p style="text-align:center; margin-top:15px;">
+      Chat individually on WhatsApp: 
+      <a href="https://wa.me/2349021770097" target="_blank" style="color:#25D366; font-weight:bold;">Click Here</a>
+    </p>
+
+    <p style="text-align:center; margin-top:5px;">
+      Join our WhatsApp Group: 
+      <a href="https://chat.whatsapp.com/DmC2VKoHEkrCqcMNBEklRY" target="_blank" style="color:#25D366; font-weight:bold;">Join Now</a>
+    </p>
   </section>
 
   <!-- Footer -->
@@ -183,6 +207,9 @@
     &copy; 2026 Moral Guide Awareness Initiative, Dutsinma.  
     Email: <a href="mailto:umarmgaid@gmail.com">umarmgaid@gmail.com</a>
   </footer>
+
+  <!-- Floating WhatsApp Group Button -->
+  <a href="https://chat.whatsapp.com/DmC2VKoHEkrCqcMNBEklRY" target="_blank" class="whatsapp-float">&#x1F4AC;</a>
 
 </body>
 </html>
